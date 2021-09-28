@@ -50,6 +50,7 @@ Examples:
 
 *Note that the CLI will use your local install of AVA when available, even when run globally.*
 
+## Default Patterns
 AVA searches for test files using the following patterns:
 
 * `test.js`
@@ -77,7 +78,7 @@ Files inside `node_modules` are *always* ignored. So are files starting with `_`
 * `**/tests/**/fixture/**/*`
 * `**/tests/**/fixtures/**/*`
 
-When using `npm test`, you can pass positional arguments directly `npm test test2.js`, but flags needs to be passed like `npm test -- --verbose`.
+When using `npm test`, you can pass positional arguments directly `npm test test2.js`, but flags needs to be passed like `npm test -- --verbose`. This is not the case if you are using yarn.
 
 ## Running tests with matching titles
 
